@@ -1,0 +1,56 @@
+@font-face {
+  font-family: RalewayRegular;
+  src: url(../fonts/RalewayRegular.ttf); }
+
+@font-face {
+  font-family: RalewayBold;
+  src: url(../fonts/RalewayBold.ttf); }
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: RalewayRegular;
+  color: #fff; }
+
+header {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/fonHead.jpg);
+  -webkit-background-size: cover;
+          background-size: cover; }
+
+.head {
+  width: 100%; }
+  .head img {
+    display: inline-block;
+    float: left;
+    padding: 40px 100px; }
+
+.phoneHead {
+  float: right;
+  padding: 40px 100px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px; }
+
+.clear {
+  clear: both; }
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+  margin: 0;
+  line-height: 1.2; }
+
+h3 {
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+  color: #FF5D00; }
+
+.formLand {
+  border: 2px solid #FF5D00;
+  margin: 20px 10%; }
