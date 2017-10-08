@@ -5,78 +5,346 @@
 	<title></title>
 	<meta name='keywords' content='Ключи'>
 	<meta name='description' content='Описание'>
+	<style>h1,h3{text-align:center;margin:0}footer,header{margin:0;padding:0;width:100%;height:100vh;background-image:url(../img/fonHead.jpg);-webkit-background-size:cover;background-size:cover}.head{width:100%}.head img{display:inline-block;float:left;padding:40px 100px}.headMnu{list-style-type:none;display:block;float:left}.headMnu li{display:inline-block;padding:30px 20px 0 0;font-size:20px}.headMnu li a{color:#fff;text-decoration:none;-webkit-transition:.3s;-o-transition:.3s;transition:.3s}.headMnu li a:hover{color:#FF5D00}.phoneHead{float:right;padding:40px 100px;text-decoration:none;color:#fff;font-size:25px}.formLand p span,h3{color:#FF5D00}.clear{clear:both}h1{font-size:30px;line-height:1.2}.formLand p,h3{font-size:18px}.wrapForm{width:80%;margin:20px auto}.imgHead{width:45%;float:left;z-index:3;position:relative}.formLandParanja{width:100%;height:100%;position:absolute;background-color:#000;opacity:.7;top:0;z-index:2}.formLand form,.formLand p{text-align:center;z-index:3;position:relative}.formLand{width:80%;margin:20px auto auto;border:2px solid #FF5D00;position:relative}.formLand p{margin:5px}.formLand form{width:55%;float:right;margin-top:30px}.formLand form input{width:60%;height:30px;-webkit-border-radius:5px;border-radius:5px;text-align:left;text-indent:15px;margin-bottom:8px}.formLand form input[type=submit]{text-align:center;background-color:#FF5D00;border:none;-webkit-border-radius:0;border-radius:0;width:60%;font-size:20px;height:50px;color:#fff;text-transform:uppercase;font-family:RalewayBold}</style>
 	<link rel="stylesheet" href="css/media.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="libs/OwlCarousel2-2.2.1/dist/assets/owl.carousel.min.css">
-	<link rel="stylesheet" href="libs/fullPage.js-master/dist/jquery.fullpage.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="libs/jquery/dist/jquery.min.js"></script>
+	<script>
+		
+$(function(){
+  $('a[href^="#"]').on('click', function(event) {
+    // отменяем стандартное действие
+    event.preventDefault();
+    
+    var sc = $(this).attr("href"),
+        dn = $(sc).offset().top;
+    /*
+    * sc - в переменную заносим информацию о том, к какому блоку надо перейти
+    * dn - определяем положение блока на странице
+    */
+    
+    $('html, body').animate({scrollTop: dn}, 1000);
+    
+    /*
+    * 1000 скорость перехода в миллисекундах
+    */
+  });
+});
+	</script>
 </head>
-<body id="fullpage">
-	<header class="section">
+<body>
+	<header id="section">
 		<div class="head">
 			<img src="img/logo.png" alt="logo">
+			<ul class ="headMnu">
+				<li><a href="#section1">Портфолио</a></li>
+				<li><a href="#section3">Этапы работы</a></li>
+				<li><a href="#section2">Цены</a></li>
+				<li><a href="#footer">Контакты</a></li>
+			</ul>
 			<div class="phone">
       	<a href="tel:111111111" class="phoneHead">+7 (499) 434-12-39</a><br>
       </div>
       <div class="clear"></div>
 		</div>
-		<h1>Профессиональная разработка Landing Page</h1>
+
+		<h1 class="multi-title">Профессиональная разработка Landing Page</h1>
 		<h3>Комплексное решение для вашего бизнеса!</h3>
 		<div class="wrapForm">
-		<img src="img/imgCompHeadForm.png" alt="developer" class="imgHead">
-		<div class="formLand">
-			<p>Оставьте заявку до 
-								<span><script type="text/javascript">
-                var appendNull = function(num){
-                    return num < 10 ? 0 + num.toString() : num;
-                };
-                d = new Date(); p = new Date(d.getTime() +  0*86400000);
-                monthb = '01,02,03,04,05,06,07,08,09,10,11,12'.split(',');
-                document.write(appendNull(p.getDate()) + '.' + monthb[p.getMonth()] + '.' + p.getFullYear());
-                </script></span>
-      <br>и получите скидку <span>50%</span>!
-			</p>
-			<form action="#">
-        <input placeholder="Ваше имя" pattern="^[А-Яа-яЁё\s]+$" name="name" required="" type="text" >
-        <input placeholder="Ваш телефон" name="phone" required="" type="text">
-        <input placeholder="Ваш e-mail" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" name="email" required="" type="email">
-        <input type="submit" value="Заказать">
-			</form>
+			
+			<div class="formLand">
+				<p>Оставьте заявку до 
+									<span><script type="text/javascript">
+	                var appendNull = function(num){
+	                    return num < 10 ? 0 + num.toString() : num;
+	                };
+	                d = new Date(); p = new Date(d.getTime() +  0*86400000);
+	                monthb = '01,02,03,04,05,06,07,08,09,10,11,12'.split(',');
+	                document.write(appendNull(p.getDate()) + '.' + monthb[p.getMonth()] + '.' + p.getFullYear());
+	                </script></span>
+	      и получите настройку <span>Яндекс.Директа</span>!
+				</p>
+				<img src="img/imgCompHeadForm.png" alt="developer" class="imgHead">
+				<form action="#">
+	        <input placeholder="Ваше имя" pattern="^[А-Яа-яЁё\s]+$" name="name" required="" type="text" >
+	        <input placeholder="Ваш телефон" name="phone" required="" type="text">
+	        <input placeholder="Ваш e-mail" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" name="email" required="" type="email">
+	        <input type="submit" value="Заказать">
+				</form><div class="clear"></div>
+				<div class="formLandParanja"></div>
 			</div>
 		</div>
-		<div class="clear"></div>
+		
 	</header>
-	<section id="section1" class="section">
-		<h2>Что такое Landing-page?</h2>
-		<p>Landing Page (лендинг, одностраничник, посадочная страница) — это одностраничный сайт, заточенный под сбор контактных данных целевой аудитории</p>
-		<div class="imgBg2"></div>
-	</section>
-	<section id="section2" class="section">
-		<h2>Примеры работ</h2>
-		<ul class="sectWrap"><!--
-			--><li></li><!--
-			--><li></li><!--
-			--><li></li><!--
-		--></ul><!--
-		--><ul class="sectWrap2"><!--
-			--><li></li><!--
-			--><li></li><!--
-			--><li></li><!--
-		--></ul>
-	</section>
-	<section id="section3" class="section">
-		<h2>Результаты наших клиентов</h2>
-		<div class="owl-carousel owl-theme">
-    <div class="item"><img src="img/slide1.jpg" alt=""></div>
-    <div class="item"><img src="img/slide2.jpg" alt=""></div>
-    <div class="item"><img src="img/slide3.jpg" alt=""></div>
-</div>
+
+	<section id="section1">
+
+		<div class="sectWrap"><!--
+			--><a href="http://nakanail.ru/" target="_blank"><div></div></a><!--
+			--><a href="http://skilluprussia.ru/" target="_blank"><div></div></a><!--
+			--><a href="http://lion-market.ru/" target="_blank"><div class="lionMarket"></div></a><!--
+		--></div><!--
+		--><div class="sectWrap2"><!--
+			--><a href="http://2fp.ru/landing-Akseler/" target="_blank"><div></div></a><!--
+			--><a href="http://2fp.ru/jbuilding/" target="_blank"><div></div></a><!--
+			--><a href="https://seocup2017.pro/" target="_blank"><div></div></a><!--
+		--></div>
 	</section>
 
-	<footer></footer>
+<!-- 	  <section class="wtf-land">
+    <div class="wtf-land__wrapper">
+      <h2 class="wtf-land__title">Что такое <span class="color-point">Landing-page?</span></h2>
+      <p class="wtf-land__descr">Landing Page(лендинг, одностраничник, посадочная страница) - это одностраничный сайт, заточенный под сбор контактных данных целевой аудитории</p>
+      <ul class="wtf-land__list">
+        <li class="wtf-land__item">lorem ipsum dolor sit amet</li>
+        <li class="wtf-land__item">orem ipsum dolor sit amet</li>
+        <li class="wtf-land__item">orem ipsum dolor sit amet</li>
+        <li class="wtf-land__item">orem ipsum dolor sit amet</li>
+      </ul>
+    </div>
+  </section> -->
+<section id="section3">
 
-<script src="libs/jquery/dist/jquery.min.js"></script>
+	<div class="etaps">
+		<a href="#footer"><div class="buttomDown">Оставить заявку</div></a>
+	</div>
+	<div class="girlEt"></div>
+
+</section>
+
+				<div class="owl-carousel owl-theme">
+	    <div class="item"><img src="img/brend/bitrix24.png" alt="bitrix24"></div>
+	    <div class="item"><img src="img/brend/callday.png" alt="callday"></div>
+	    <div class="item"><img src="img/brend/comagic.png" alt="comagic"></div>
+	    <div class="item"><img src="img/brend/facebook.png" alt="facebook"></div>
+	    <div class="item"><img src="img/brend/Google_AdWords.png" alt="Google_AdWords"></div>
+	    <div class="item"><img src="img/brend/instagram.png" alt="instagram"></div>
+	    <div class="item"><img src="img/brend/mytarget.png" alt="mytarget"></div>
+	    <div class="item"><img src="img/brend/odnoklassniki.png" alt="odnoklassniki"></div>
+	    <div class="item"><img src="img/brend/roistat.png" alt="roistat"></div>
+	    <div class="item"><img src="img/brend/VK.com.png" alt="VK"></div>
+	    <div class="item"><img src="img/brend/yandex.png" alt="yandex"></div>
+		</div>
+
+<section id="section2" class="offers">
+  <div class="offers__wrap">
+    <h2 class="offers__title">Предлагаем 3 пакета услуг</h2>
+    <p class="offers__descr">Для достижения наибольших результатов от landing-page, наши услуги объединены в следующие пакеты:</p>
+    <div class="offers__table table">
+      <div class="table__descr">
+        <div class="table__header--descr">Лайт</div>
+        <div class="table__text table__text--lightgreen">Маркетинговое исследование<br>  рынка и анализ конкурентов (?)</div>
+        <div class="table__text">Разработка маркетинговой<br>  стратегии (?)</div>
+        <div class="table__text table__text--lightgreen">Разработка адаптивной<br>  страницы (Landing Page) (?)</div>
+        <div class="table__text">Настройка Яндекс.Метрики<br>  и Google Analytics (?)</div>
+        <div class="table__text table__text--lightgreen">Настройка рекламных кампаний<br>  Яндекс.Директ (?)</div>
+        <div class="table__text">Настройка рекламных кампаний<br>  Google AdWords (?)</div>
+        <div class="table__text table__text--lightgreen">Технология мультилендинг<br>  и геотаргетинг (?)</div>
+        <div class="table__text">Подключение CRM-системы (?)</div>
+        <div class="table__text table__text--lightgreen">Настройка таргетинга и<br>  ретаргетинга ВКонтакте (?)</div>
+        <div class="table__text">Настройка сквозной аналитики (?)</div>
+        <div class="table__text table__text--lightgreen"><b>Бесплатное 30-дневное<br>  сопровождение (?)</b></div>
+        <div class="table__text table__price price__descr">Стоимость</div>
+      </div>
+
+      <div class="table__light">
+        <div class="table__header--light">Лайт</div>
+        <div class="table__text--light table__text--lightgreen icon-yes"></div>
+        <div class="table__text--light icon-yes"></div>
+        <div class="table__text--light table__text--lightgreen icon-yes"></div>
+        <div class="table__text--light icon-yes"></div>
+        <div class="table__text--light table__text--lightgreen icon-yes"></div>
+        <div class="table__text--light icon-no"></div>
+        <div class="table__text--light table__text--lightgreen icon-no"></div>
+        <div class="table__text--light icon-no"></div>
+        <div class="table__text--light table__text--lightgreen icon-no"></div>
+        <div class="table__text--light"></div>
+        <div class="table__text--light table__text--lightgreen icon-yes"></div>
+        <div class="table__price price-light">15000</div>
+      </div>
+      <div class="table__standart">
+        <div class="table__header--standart">Мидл</div>
+        <div class="table__text--standart table__text--lightgreen icon-yes"></div>
+        <div class="table__text--standart icon-yes"></div>
+        <div class="table__text--standart table__text--lightgreen icon-yes"></div>
+        <div class="table__text--standart icon-yes"></div>
+        <div class="table__text--standart table__text--lightgreen icon-yes"></div>
+        <div class="table__text--standart icon-yes"></div>
+        <div class="table__text--standart table__text--lightgreen icon-yes"></div>
+        <div class="table__text--standart icon-yes"></div>
+        <div class="table__text--standart table__text--lightgreen icon-no"></div>
+        <div class="table__text--standart icon-no"></div>
+        <div class="table__text--standart table__text--lightgreen icon-yes"></div>
+        <div class="table__price price-standart">29000</div>
+      </div>
+      <div class="table__lux">
+        <div class="table__header--lux">Люкс</div>
+        <div class="table__text--lux table__text--lightgreen icon-yes"></div>
+        <div class="table__text--lux icon-yes"></div>
+        <div class="table__text--lux table__text--lightgreen icon-yes"></div>
+        <div class="table__text--lux icon-yes"></div>
+        <div class="table__text--lux table__text--lightgreen icon-yes"></div>
+        <div class="table__text--lux icon-yes"></div>
+        <div class="table__text--lux table__text--lightgreen icon-yes"></div>
+        <div class="table__text--lux icon-yes"></div>
+        <div class="table__text--lux table__text--lightgreen icon-yes"></div>
+        <div class="table__text--lux icon-yes"></div>
+        <div class="table__text--lux table__text--lightgreen icon-yes"></div>
+        <div class="table__price price-lux">44000</div>
+      </div>
+    </div>
+
+
+    <div class="offers__table mobile">
+      <div class="table__descr table__descr--mob">
+        <div class="table__header--descr">Лайт</div>
+        <div class="table__text table__text--lightgreen">Маркетинговое исследование<br>  рынка и анализ конкурентов (?)</div>
+        <div class="table__text">Разработка маркетинговой<br>  стратегии (?)</div>
+        <div class="table__text table__text--lightgreen">Разработка адаптивной<br>  страницы (Landing Page) (?)</div>
+        <div class="table__text">Настройка Яндекс.Метрики<br>  и Google Analytics (?)</div>
+        <div class="table__text table__text--lightgreen">Настройка рекламных кампаний<br>  Яндекс.Директ (?)</div>
+        <div class="table__text">Настройка рекламных кампаний<br>  Google AdWords (?)</div>
+        <div class="table__text table__text--lightgreen">Технология мультилендинг<br>  и геотаргетинг (?)</div>
+        <div class="table__text">Подключение CRM-системы (?)</div>
+        <div class="table__text table__text--lightgreen">Настройка таргетинга и<br>  ретаргетинга ВКонтакте (?)</div>
+        <div class="table__text">Настройка сквозной аналитики (?)</div>
+        <div class="table__text table__text--lightgreen"><b>Бесплатное 30-дневное<br>  сопровождение (?)</b></div>
+        <div class="table__text table__price price__descr">Стоимость</div>
+      </div>
+
+      <div class="table__light table__light--mob">
+        <div class="table__header--light">Лайт</div>
+        <div class="table__text--light table__text--lightgreen icon-yes"></div>
+        <div class="table__text--light icon-yes"></div>
+        <div class="table__text--light table__text--lightgreen icon-yes"></div>
+        <div class="table__text--light icon-yes"></div>
+        <div class="table__text--light table__text--lightgreen icon-yes"></div>
+        <div class="table__text--light icon-no"></div>
+        <div class="table__text--light table__text--lightgreen icon-no"></div>
+        <div class="table__text--light icon-no"></div>
+        <div class="table__text--light table__text--lightgreen icon-no"></div>
+        <div class="table__text--light"></div>
+        <div class="table__text--light table__text--lightgreen icon-yes"></div>
+        <div class="table__price price-light">15000</div>
+      </div>
+
+      <div class="table__descr table__descr--mob">
+        <div class="table__header--descr">Лайт</div>
+        <div class="table__text table__text--lightgreen">Маркетинговое исследование<br>  рынка и анализ конкурентов (?)</div>
+        <div class="table__text">Разработка маркетинговой<br>  стратегии (?)</div>
+        <div class="table__text table__text--lightgreen">Разработка адаптивной<br>  страницы (Landing Page) (?)</div>
+        <div class="table__text">Настройка Яндекс.Метрики<br>  и Google Analytics (?)</div>
+        <div class="table__text table__text--lightgreen">Настройка рекламных кампаний<br>  Яндекс.Директ (?)</div>
+        <div class="table__text">Настройка рекламных кампаний<br>  Google AdWords (?)</div>
+        <div class="table__text table__text--lightgreen">Технология мультилендинг<br>  и геотаргетинг (?)</div>
+        <div class="table__text">Подключение CRM-системы (?)</div>
+        <div class="table__text table__text--lightgreen">Настройка таргетинга и<br>  ретаргетинга ВКонтакте (?)</div>
+        <div class="table__text">Настройка сквозной аналитики (?)</div>
+        <div class="table__text table__text--lightgreen"><b>Бесплатное 30-дневное<br>  сопровождение (?)</b></div>
+        <div class="table__text table__price price__descr">Стоимость</div>
+      </div>
+
+      <div class="table__standart table__standart--mob">
+        <div class="table__header--standart">Мидл</div>
+        <div class="table__text--standart table__text--lightgreen icon-yes"></div>
+        <div class="table__text--standart icon-yes"></div>
+        <div class="table__text--standart table__text--lightgreen icon-yes"></div>
+        <div class="table__text--standart icon-yes"></div>
+        <div class="table__text--standart table__text--lightgreen icon-yes"></div>
+        <div class="table__text--standart icon-yes"></div>
+        <div class="table__text--standart table__text--lightgreen icon-yes"></div>
+        <div class="table__text--standart icon-yes"></div>
+        <div class="table__text--standart table__text--lightgreen icon-no"></div>
+        <div class="table__text--standart icon-no"></div>
+        <div class="table__text--standart table__text--lightgreen icon-yes"></div>
+        <div class="table__price price-standart">29000</div>
+      </div>
+
+      <div class="table__descr table__descr--mob">
+        <div class="table__header--descr">Лайт</div>
+        <div class="table__text table__text--lightgreen">Маркетинговое исследование<br>  рынка и анализ конкурентов (?)</div>
+        <div class="table__text">Разработка маркетинговой<br>  стратегии (?)</div>
+        <div class="table__text table__text--lightgreen">Разработка адаптивной<br>  страницы (Landing Page) (?)</div>
+        <div class="table__text">Настройка Яндекс.Метрики<br>  и Google Analytics (?)</div>
+        <div class="table__text table__text--lightgreen">Настройка рекламных кампаний<br>  Яндекс.Директ (?)</div>
+        <div class="table__text">Настройка рекламных кампаний<br>  Google AdWords (?)</div>
+        <div class="table__text table__text--lightgreen">Технология мультилендинг<br>  и геотаргетинг (?)</div>
+        <div class="table__text">Подключение CRM-системы (?)</div>
+        <div class="table__text table__text--lightgreen">Настройка таргетинга и<br>  ретаргетинга ВКонтакте (?)</div>
+        <div class="table__text">Настройка сквозной аналитики (?)</div>
+        <div class="table__text table__text--lightgreen"><b>Бесплатное 30-дневное<br>  сопровождение (?)</b></div>
+        <div class="table__text table__price price__descr">Стоимость</div>
+      </div>
+
+      <div class="table__lux table__lux--mob">
+        <div class="table__header--lux">Люкс</div>
+        <div class="table__text--lux table__text--lightgreen icon-yes"></div>
+        <div class="table__text--lux icon-yes"></div>
+        <div class="table__text--lux table__text--lightgreen icon-yes"></div>
+        <div class="table__text--lux icon-yes"></div>
+        <div class="table__text--lux table__text--lightgreen icon-yes"></div>
+        <div class="table__text--lux icon-yes"></div>
+        <div class="table__text--lux table__text--lightgreen icon-yes"></div>
+        <div class="table__text--lux icon-yes"></div>
+        <div class="table__text--lux table__text--lightgreen icon-yes"></div>
+        <div class="table__text--lux icon-yes"></div>
+        <div class="table__text--lux table__text--lightgreen icon-yes"></div>
+        <div class="table__price price-lux">44000</div>
+      </div>
+    </div>
+<div class="btn-wrap">
+    <a href="#footer"><button class="offers__btn">Заказать</button></a>
+  </div>
+  </div>
+</section>
+
+
+
+
+	<footer id="footer">
+		
+		<div class="head">
+			<img src="img/logo.png" alt="logo">
+
+			<div class="phone">
+      	<a href="tel:111111111" class="phoneHead">+7 (499) 434-12-39</a><br>
+      </div>
+      <div class="clear"></div>
+		</div>
+
+		<h1 class="multi-title">Профессиональная разработка Landing Page</h1>
+		<h3>Комплексное решение для вашего бизнеса!</h3>
+		<div class="wrapForm">
+			
+			<div class="formLand">
+				<p>Оставьте заявку до 
+									<span><script type="text/javascript">
+	                var appendNull = function(num){
+	                    return num < 10 ? 0 + num.toString() : num;
+	                };
+	                d = new Date(); p = new Date(d.getTime() +  0*86400000);
+	                monthb = '01,02,03,04,05,06,07,08,09,10,11,12'.split(',');
+	                document.write(appendNull(p.getDate()) + '.' + monthb[p.getMonth()] + '.' + p.getFullYear());
+	                </script></span>
+	      и получите настройку <span>Яндекс.Директа</span>!
+				</p>
+				<img src="img/imgCompHeadForm.png" alt="developer" class="imgHead">
+				<form action="#">
+	        <input placeholder="Ваше имя" pattern="^[А-Яа-яЁё\s]+$" name="name" required="" type="text" >
+	        <input placeholder="Ваш телефон" name="phone" required="" type="text">
+	        <input placeholder="Ваш e-mail" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" name="email" required="" type="email">
+	        <input type="submit" value="Заказать">
+				</form><div class="clear"></div>
+				<div class="formLandParanja"></div>
+			</div>
+		</div>
+
+	</footer>
+
+
 <script src="js/main.js"></script>
-<script src="libs/fullPage.js-master/dist/jquery.fullpage.min.js"></script>
 <script src="libs/OwlCarousel2-2.2.1/dist/owl.carousel.min.js"></script>
 </body>
 </html>

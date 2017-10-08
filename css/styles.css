@@ -1,0 +1,315 @@
+
+.wtf-land {
+  background-image: url(../img/8gloa_croper_ru.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  padding: 100px 0 100px;
+}
+
+.wtf-land__wrapper {
+  margin: 0 auto;
+  max-width: 1020px;
+  padding: 10px;
+}
+
+.wtf-land__title {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 50px;
+  padding-top: 15px;
+}
+
+.wtf-land__descr {
+  text-align: center;
+  font-size: 42px;
+  color: #222;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: inline-block;
+  padding: 10px;
+  border: 2px solid rgba(255, 93, 0, .5);
+
+}
+
+
+.wtf-land__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.wtf-land__item {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: 24%;
+  font-size: 20px;
+  vertical-align: top;;
+}
+
+@media screen and (max-width: 768px) {
+  .wtf-land__item {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .wtf-land__title {
+    font-size: 42px;
+  }
+
+  .wtf-land__descr {
+    font-size: 32px;
+  }
+
+  .wtf-land__item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+
+.color-point {
+color: #FF5D00;
+}
+
+.offers {
+  padding: 20px;
+}
+
+.offers__title {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'RalewayRegular';
+  font-size: 36px;
+  line-height: 24px;
+  padding: 20px;
+  color: #333333;
+  line-height: 38px;
+}
+
+.offers__descr {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'RalewayRegular';
+  font-size: 18px;
+  padding: 20px;
+  color: #333333;
+}
+
+.offers__table {
+  display: inline-block;
+  width: 100%;
+  font-size: 0;
+  text-align: center;
+}
+
+.table__descr {
+  display: inline-block;
+  width: 25%;
+  font-size: 16px;
+}
+
+.table__light,
+.table__standart,
+.table__lux {
+  display: inline-block;
+  width: 20%;
+  font-size: 24px;
+  vertical-align: top;
+  border-left: 1px solid rgba(0, 0, 0, 0.17);
+border-top: 1px solid rgba(0, 0, 0, 0.17);
+border-bottom: 1px solid rgba(0, 0, 0, 0.17);
+}
+
+.table__lux {
+  border-right: 1px solid rgba(0, 0, 0, 0.17);
+}
+
+.table__header--descr {
+  background-color: #fff;
+  color: #fff;
+  padding: 15px;
+}
+
+.table__text {
+  height: 35px;
+  color: #333333;
+  padding: 10px;
+  text-align: left;
+  border-left: 1px solid rgba(0, 0, 0, 0.17);
+  border-top: 1px solid rgba(0, 0, 0, 0.17);
+}
+
+
+.table__header--light {
+  padding: 10px;
+  text-align: center;
+  background-color: #87e38d;
+  color: #fff;
+}
+
+.table__header--standart {
+  padding: 10px;
+  text-align: center;
+  background-color: #e0c46a;
+  color: #fff;
+}
+
+ .table__header--lux {
+   padding: 10px;
+   text-align: center;
+   background-color: #cd5f61;
+   color: #fff;
+ }
+
+
+
+ .icon-yes {
+   background: url("../img/yes.png") no-repeat center;
+ }
+
+ .icon-no {
+   background: url("../img/no.png") no-repeat center;
+ }
+
+ .table__text--lightgreen {
+   background-color: rgba(188, 224, 169, .2);
+ }
+
+ .table__text--light,
+ .table__text--standart,
+ .table__text--lux {
+   height: 55px;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.17);
+ }
+
+ .price-light {
+   color: #84e589;
+font-size: 24px;
+font-weight: 700;
+line-height: 18px;
+ }
+
+ .price-standart {
+   color: #e1c563;
+font-size: 24px;
+font-weight: 700;
+line-height: 18px;
+ }
+
+ .price-lux {
+   color: #cf5e5e;
+font-size: 24px;
+font-weight: 700;
+line-height: 18px;
+ }
+
+ .table__price {
+   padding: 40px 10px;
+ }
+
+ .price__descr {
+   border-left: none;
+ }
+
+.btn-wrap {
+  text-align: center;
+}
+
+ .offers__btn {
+   display: inline-block;
+   border: 1px solid rgba(0, 0, 0, 0.22);
+background-color: #a8e557;
+padding: 15px 70px;
+color: #ffffff;
+font-family: 'RalewayRegular';
+font-size: 36px;
+font-weight: 400;
+line-height: 18px;
+text-transform: uppercase;
+cursor: pointer;
+ }
+
+ @media screen and (max-width: 1110px) {
+   .table__text {
+     height: 60px;
+   }
+
+   .table__text br {
+     display: none;
+   }
+
+   .table__text--light,
+   .table__text--standart,
+   .table__text--lux {
+     height: 80px;
+   }
+ }
+
+ .mobile {
+   display: none;
+ }
+
+@media screen and (max-width: 815px) {
+  .table__light,
+  .table__standart,
+  .table__lux {
+    width: 17%;
+  }
+
+  .table__descr {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+.offers__table {
+  display: none;
+}
+
+.mobile {
+  display: inline-block;
+}
+
+.table__descr--mob {
+  width: 39%;
+}
+
+.table__light--mob,
+ .table__standart--mob,
+ .table__lux--mob {
+   width: 25%;
+   border-right: 1px solid rgba(0, 0, 0, 0.17);
+ }
+
+}
+
+@media screen and (max-width: 540px) {
+  .table__descr--mob {
+    width: 69%;
+  }
+
+  .table__light--mob,
+   .table__standart--mob,
+   .table__lux--mob {
+     width: 30%;
+   }
+
+   .offers__btn {
+     font-size: 30px;
+     padding: 15px 30px;
+   }
+}

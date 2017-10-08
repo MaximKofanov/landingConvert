@@ -1,12 +1,88 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
-	/**/
+@media only screen and (max-width : 1300px)
+
+	section#section3
+		height: 800px
+		position: relative
+		text-align: center
+		.etaps
+			background-image: url(../img/etaps.jpg)
+			background-size: 100%
+			background-repeat: no-repeat
+			background-position: center 0
+			width: 80%
+			height: 100%
+			display: inline-block
+			margin: auto
+		.girlEt
+			display: none
+
+	div.buttomDown
+		top: 6%
+		left: 40%
+
+@media only screen and (max-width : 1080px)
+
+	.wrapForm
+		.formLand
+			form
+				width: 100%
+			.imgHead
+				display: none
+
+
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
+
+	section#section3
+		height: 615px
+	
+	body 
+		header,footer
+			height: 600px
+
+	//section1
+	section#section1
+		background-color: #f7f7f7
+		height: 400px
+		li
+			opacity: 0.4
+			transition: 0.2s
+			&:hover
+				cursor: pointer
+				opacity: 1
+		.sectWrap
+			height: 200px
+			a
+				height: 200px
+		.sectWrap2
+			height: 200px
+			a
+				height: 200px
+
+@media only screen and (max-width : 846px)
+
+	header
+		.head
+			width: 100%
+			text-align: center
+			img
+				display: inline-block
+				text-align: center
+				padding: 10px 0
+				float: none
+			.headMnu
+				float: none
+				li
+					padding: 0 10px
+			.phoneHead
+				float: none
+				padding: 0
+		h1
+			margin-top: 10px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
@@ -32,10 +108,73 @@
 		-ms-animation: none !important
 		animation: none !important
 
+	section#section3
+		height: 500px
+
+	section#section1
+		height: 1200px
+		.sectWrap
+			height: 600px
+			a
+				height: 200px
+				display: block
+				&:nth-child(1)
+					width: 100%
+				&:nth-child(2)
+					width: 100%
+					background-position: 0 -110px
+				&:nth-child(3)
+					width: 100%
+		.sectWrap2
+			height: 600px
+			a
+				height: 200px
+				display: block
+				&:nth-child(1)
+					width: 100%
+				&:nth-child(2)
+					width: 100%
+					background-position: 0 -50px
+				&:nth-child(3)
+					width: 100%
+
+	footer
+		height: 250px
+		text-align: center
+		.head
+			img
+				display: inline-block
+				text-align: center
+				padding: 10px 0
+				float: none
+			.phone
+				.phoneHead
+					float: none
+					padding: 0
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+	
+	section#section3
+		height: 390px
+		position: relative
+		text-align: center
+		.etaps
+			background-image: url(../img/etaps.jpg)
+			background-size: 100%
+			background-repeat: no-repeat
+			background-position: center 0
+			width: 100%
+			height: 100%
+			display: inline-block
+			margin: auto
+		.girlEt
+			display: none
+
+	div.buttomDown
+		top: 6%
+		left: 40%
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
